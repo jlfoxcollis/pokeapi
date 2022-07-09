@@ -1,0 +1,9 @@
+.card {
+  border: solid;
+}
+
+.preview {
+  height: 50%;
+  width: 50%;
+  border: solid;
+}

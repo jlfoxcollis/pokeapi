@@ -7,6 +7,8 @@ function Deck(props) {
   const cards = props.cards.map(card => {
     return ( <Card
       data={card}
+      preview={props.preview}
+      showSelected={props.showSelected}
       key={card.name}
       />
     )
