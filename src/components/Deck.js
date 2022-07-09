@@ -6,7 +6,11 @@ function Deck(props) {
 
   const cards = props.cards.map(card => {
     return ( <Card
-      data={card}
+      attributes={card}
+      name={card.name}
+      images={card.sprites}
+      weight={card.weight}
+      base_experience={card.base_experience}
       preview={props.preview}
       showSelected={props.showSelected}
       key={card.name}

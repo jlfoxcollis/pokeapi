@@ -46,9 +46,12 @@ class App extends Component  {
         {this.state.isLoading && <h3>Loading Cards</h3>}
         {this.state.showSelected ? 
           <Card 
+            name={this.state.selected.name}
+            images={this.state.selected.sprites}
+            weight={this.state.selected.weight}
+            base_experience={this.state.selected.base_experience}
             showSelected={this.showSelected}
             preview={this.state.showSelected}
-            data={this.state.selected} 
           /> : 
           <Deck
             showSelected={this.showSelected}
